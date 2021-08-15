@@ -6,15 +6,12 @@ services:
   - docker
 
 # Pre-testing installs
-install:
-
 
 # Scripts to be run such as tests
 before_script:
   - echo "no tests"
 
 script:
-  - npm run build
   - docker --version # print the version for logging
   - docker build -t rev-proxy .
   - docker tag rev-proxy scharati/rev-proxy:latest

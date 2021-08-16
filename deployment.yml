@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: rev-proxy
-        image: scharati/reverse-proxy
+        image: scharati/reverse-proxy:v1
         ports:
         - containerPort: 8000
